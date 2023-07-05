@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-header: #ff6900 ;
+    --bg-main: #fff ;
+    --bg--footer: #1a1a1a ;
+    --bg-discount: #ff0307 ;
+    --bg-ecofriendly: #008000 ;
+    --discounted-price: #ff0307 ;   
+}
