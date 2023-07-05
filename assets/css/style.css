@@ -136,6 +136,19 @@ header>div{
 
 }
 
+
+    
+    .immagine2{
+        display: none;
+    }
+    .card:hover .immagine1{
+        display: none;
+    }
+    
+    .card:hover .immagine2{
+        display: inline;
+    }
+
 /* #endregion main */
 
 
@@ -183,6 +196,7 @@ footer>.d-flex,.socials .azienda{
     justify-content: center;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem;
 }
 
 
@@ -220,3 +234,4 @@ section a{
     display: block;
 }
 /* #endregion utility */
+
