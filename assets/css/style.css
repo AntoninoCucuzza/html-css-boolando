@@ -13,6 +13,8 @@
     --bg-ecofriendly: #008000 ;
     --discounted-price: #ff0307 ; 
     --text-description: #000001 ;
+    --text-card: #fff;
+
 }
 
 body{
@@ -75,7 +77,7 @@ header>div{
     height: 100%;
     width: 100%;
 }
-.card>span{
+.card>span {
     position: absolute;
     bottom: 5%;
     padding: 0.25rem;
@@ -95,11 +97,13 @@ header>div{
 
 .discount{
     background-color: var(--discounted-price);
+    color: var(--text-card);
     left: 0;
 }
 
 .ecofriendly{
     background-color: var(--bg-ecofriendly);
+    color: var(--text-card);
     left: 3.1rem;
 }
 .price{
