@@ -11,7 +11,8 @@
     --bg--footer: #1a1a1a ;
     --bg-discount: #ff0307 ;
     --bg-ecofriendly: #008000 ;
-    --discounted-price: #ff0307 ;   
+    --discounted-price: #ff0307 ; 
+    --text-description: #000001 ;
 }
 
 body{
@@ -29,14 +30,25 @@ section{
     width: 100%;
     height: 100%;
 }
-a{
+
+header a{
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+header a:hover{
     text-decoration: underline;
 }
+
+main a{
+    text-decoration: none;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
 
 /* #endregion common */
 
@@ -48,12 +60,62 @@ header>div{
     align-items: center;
 }
 
-.personal_area>a, .nav,a{
+.personal_area>a, .nav>a{
     font-size: 1.20rem;
     margin: 0.25rem;
 }
 
 /* #endregion Header */
+
+/* #region main */
+.card{
+    position: relative;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+}
+.card>span{
+    position: absolute;
+    bottom: 5%;
+    padding: 0.25rem;
+}
+.heart{
+    top: 10px;
+    right: 0px;
+    height: 30px;
+    aspect-ratio: 1;
+    text-align: center;
+    background-color: var(--bg-main);
+}
+
+.heart:hover{
+    color: var(--discounted-price);
+}
+
+.discount{
+    background-color: var(--discounted-price);
+    left: 0;
+}
+
+.ecofriendly{
+    background-color: var(--bg-ecofriendly);
+    left: 3.1rem;
+}
+.price{
+    font-weight: 300;
+}
+.discont_price{
+    color: var(--discounted-price);
+   
+}
+.old_price{
+    text-decoration: line-through;
+
+
+}
+
+/* #endregion main */
 
 
 /* #region debug */
@@ -96,14 +158,35 @@ header>div{
 
 
 
+
+
 /* #region utility */
 .d-flex{
     display: flex;
+}
+
+.row{
+    display: flex;
+
 }
 
 .container{
     max-width: 1700px;
     width: 80%;
     margin: 0 auto;
+}
+
+.col-3{
+    width: calc(100%/12*3);
+    margin: 1rem auto;
+}
+
+.m-top-3{
+    margin-top: 6rem;
+}
+
+section a{
+    color: var(--text-description);
+    display: block;
 }
 /* #endregion utility */
