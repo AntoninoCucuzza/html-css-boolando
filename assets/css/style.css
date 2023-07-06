@@ -24,7 +24,7 @@ body{
 
 header{
     background-color: var(--bg-header);
-    margin-bottom: 3rem;
+    margin-bottom:0;
     position: fixed;
     width: 100%;
     z-index: 111;
@@ -41,7 +41,7 @@ header a:hover{
 
 main{
     background-color: var(--bg-main);
-    height: 100vh;
+    
 }
 
 main a{
@@ -56,11 +56,15 @@ section{
 footer{
     background-color: var(--bg--footer);
     color: var(--text-card);
-    height: 100px;
+    height: 120px;
     margin-top: 4rem;
 }
 footer a{
     color: var(--text-card);
+    padding: 0.25rem 0.25rem;
+}
+footer h3{
+    padding: 0.5rem;
 }
 
 h4{
@@ -138,16 +142,16 @@ header>div{
 
 
     
-    .immagine2{
-        display: none;
-    }
-    .card:hover .immagine1{
-        display: none;
-    }
+.immagine2{
+    display: none;
+}
+.card:hover .immagine1{
+    display: none;
+}
     
-    .card:hover .immagine2{
-        display: inline;
-    }
+.card:hover .immagine2{
+    display: inline;
+}
 
 /* #endregion main */
 
@@ -193,13 +197,19 @@ header>div{
 /* #region footer */
 
 footer>.d-flex,.socials .azienda{
-    justify-content: center;
+
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
 }
 
+footer span{
+    padding: 0.5rem;
+}
 
+footer h2{
+    padding: 0.5rem ;
+}
 /* #endregion footer */
 
 
